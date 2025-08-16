@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nitya Sharma - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="netflix-intro.css">
+    <link rel="stylesheet" href="particles.css">
+    <script src="https://kit.fontawesome.com/3e5bdaceb2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- Netflix-style intro -->
+<div class="intro-container" id="intro-container">
+    <div class="particles" id="particles"></div>
+    <div class="logo-container">
+        <div class="logo-text">NITYA</div>
+        <div class="portfolio-text">SHARMA</div>
+        <div class="shine-effect"></div>
+    </div>
+</div>
+<div class="portfolio-particles" id="portfolio-particles"></div>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/2.png" class="logo" alt="Nitya Sharma Logo">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>STUDENT</p>
+            <h1>Hi, I'm <span> Nitya Sharma </span>a student<br> at RV college of Engineering <br>persuing bachelors in <br>Artificial intelligence and Machine Learning  </h1>
+        </div>
+    </div>
+</div>
+<!-------------------about---------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.jpg" class="user" alt="Nitya Sharma user">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a passionate and dedicated student pursuing a Bachelor’s degree in Artificial Intelligence and Machine Learning at RV College of Engineering. My academic journey has equipped me with a strong foundation in data science, deep learning, natural language processing, and computer vision. I enjoy applying my knowledge to real-world problems, from developing predictive models to exploring innovative AI-driven solutions. Beyond academics, I actively work on projects that challenge my problem-solving skills and enhance my technical expertise. I am eager to continue learning, collaborating, and contributing to the rapidly evolving field of AI and ML.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links"  onclick="opentab('Achievements')">Achievements</p>
+                    <p class="tab-links"  onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>MACHINE LEARNING</span><br>Python, Numpy, PandasPython (NumPy, Pandas, Matplotlib, Seaborn),LLM, NLP, Auto-encoders, Open-CV, BeautifulSoup(Bs4)</li>
+                        <li><span>LANGUAGES</span><br>Python, C/C++, HTML, C#(C-sharp), CSS</li>
+                        <li><span>AR/VR/XR DEVELOPMENT</span><br>Unity, Blender, Lapentor, AR/VR SDKs, Game design, 3-D modelling</li>
+                        <li><span>GENERATIVE AI</span><br>Langchain, Chromadb, API, Ollama </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Achievements">
+                    <ul>
+                        <li><span>PATENT</span><br> system and Method of providing Semi-Autonomous Speed Regulation Mechanism for Heavy Motor Vehicles(HMVs)</li>
+                        <li><span>2ND PLACE IN VIRTUOVATION BNMIT </span><br> won at BNMIT in AR/VR hackathon</li>
+                        <li><span> 1ST PLACE AT EXUBERANCE 2025 </span><br>• Secured 1st place in Business Marathon at Exuberance 2025 and qualified for the Hult Prize Regionals</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>RV COLLEGE OF ENGINEERING</span><br>persuing my undergraduate degree in Artificial Intelligence and Machine Learning<br>2023-ongoing<br>Bengaluru, Karnataka</li>
+                        <li><span>SPRING DALE SENIOR SEC SCHOOL</span><br>Did my schooling till 12th standard<br>2007-2022<br>Amritsar, Punjab</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------------------projects-------------->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>    
+        <div class="project-list">
+            <div>
+                <i class="fa-solid fa-gavel"></i>
+                <h2>NYAYASSIST - Lawyer's AI-assistant </h2>
+                <p> • Built a Generative AI legal assistant using GPT-4, LangChain, and ChromaDB to analyze criminal notices,
+                    extract key information, and assist lawyers with real-time insights.<br>
+                    • Integrated mapping of IPC-to-BNS, CrPC-to-BNSS, and IEA-to-BSA law along with Kanoon API to compare
+                    old and new criminal laws and retrieve relevant case precedents from the past 10 years.<br>
+                    • The streamlit interface was implemented with the RAG architecture, enabling lawyers to interact with legal
+                    data, perform case research, and reduce manual workload.</p>
+                    <a href="NYAYASSIST.html" class="btn">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-briefcase-medical"></i>
+                <h2>TERAHEAL for Wellness </h2>
+                <p> • Built an AI-driven platform using CNNs, RNNs, LSTMs, Transformers, Autoencoders, and GNNs to analyze
+                    genetic and lifestyle data for early prediction of hereditary health risks.<br>
+                    • Designed a personalized health recommendation system using epigenetic modeling and reinforcement learning
+                    to provide user-specific adaptive wellness plans.<br>
+                    • Developed a responsive, interactive interface with React and Streamlit, enabling real-time visualization of genetic
+                    reports and lifestyle optimization insights.<br>
+                    <a href="TERAHEAL.html" class="btn">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-bus-side"></i>
+                <h2>SWIFTPASS GUARDIAN for HMV </h2>
+                <p> •  Designed a safe overtaking simulation system for heavy vehicles in Unity using C and raycasting techniques to
+                    detect oncoming traffic and lateral obstructions in real time.<br>
+                    • Applied physics-based detection, collision prediction algorithms, and distance threshold logic to assess overtaking
+                    safety and restrict acceleration beyond a set limit when unsafe.<br>
+                    • Integrated a context-aware alert mechanism that dynamically triggers visual warnings and overrides driver input
+                    to prevent dangerous overtaking and minimize accident risks.<br>
+                    <a href="SWIFTPASS.html" class="btn">Learn More</a>
+
+            </div>
+            <div>
+                <i class="fa-solid fa-plane"></i>
+                <h2>TICK-TRAVEL - personalized itinerary planner</h2>
+                <p> •  Developed a travel planning app that creates personalized itineraries based on user budget, preferences, and trip duration..<br>
+                    • Used BeautifulSoup (bs4) to scrape Vikivoyage for destination data and travel insights. Integrated Google Gemini API for AI-driven 
+                    recommendations and an in-built voice command interface for hands-free plannin<br>
+                    • Designed budget optimization algorithms to align travel plans with user constraints without compromising quality. Delivered
+                     an intuitive front-end interface for seamless trip customization and enhanced user experience.<br>
+                    <a href="TICKTRAVEL.html" class="btn">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-----------------contact----------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Get in Touch</h1>
+                <p><i class="fa-solid fa-envelope"></i> 15sharma.nitya@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +91 9041485334</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/nitya-sharma-894b5b328/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Nitya1504"><i class="fa-brands fa-github"></i></i></a>
+                    <a href="https://www.instagram.com/nityasharma_1504?igsh=YndlOGthbDRzc2J6&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
+
+                </div>
+                <a href="images/NityaSharma-Resume.pdf" download  class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form >
+                    <input type="text" name="Name" placeholder="Your Name" required>    
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id ="msg">Feel free to contact :)</span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>
+            Copyright © 2025 Nitya Sharma.<i class="fa-solid fa-heart"></i> All Rights Reserved.
+        </p>
+    </div>
+</div>
+
+<script>
+    
+    // 🆕 NEW CODE - Skip intro on return visit
+    if (sessionStorage.getItem('introShown') === 'true') {
+        document.addEventListener('DOMContentLoaded', function() {
+            const introContainer = document.getElementById('intro-container');
+            if (introContainer) {
+                introContainer.style.display = 'none';
+                introContainer.style.visibility = 'hidden';
+            }
+            startPortfolioParticles();
+        });
+    } else {
+        setTimeout(() => {
+            sessionStorage.setItem('introShown', 'true');
+        }, 5500);
+    }
+    // 🆕 END OF NEW CODE
+
+    // ADD THIS NEW CODE AT THE TOP
+    // Netflix intro functionality
+    function createNetflixParticles() {
+        const particlesContainer = document.getElementById('particles');
+        if (!particlesContainer) return;
+        
+        const particleCount = 20;
+        for (let i = 0; i < particleCount; i++) {
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+            
+            const size = Math.random() * 4 + 2;
+            particle.style.width = size + 'px';
+            particle.style.height = size + 'px';
+            particle.style.left = Math.random() * 100 + '%';
+            particle.style.top = Math.random() * 100 + '%';
+            particle.style.animationDelay = Math.random() * 3 + 's';
+            
+            particlesContainer.appendChild(particle);
+        }
+    }
+
+    // Initialize Netflix particles
+    createNetflixParticles();
+
+    // Netflix sound effect simulation
+    function addNetflixSoundEffect() {
+        const logoText = document.querySelector('.logo-text');
+        if (logoText) {
+            setTimeout(() => {
+                logoText.style.transform = 'scale(1.05)';
+                setTimeout(() => {
+                    logoText.style.transform = 'scale(1)';
+                }, 200);
+            }, 1000);
+        }
+    }
+
+    addNetflixSoundEffect();
+
+    // Click to skip Netflix intro
+    document.addEventListener('click', function(e) {
+        const introContainer = document.getElementById('intro-container');
+        if (introContainer && introContainer.style.display !== 'none' && introContainer.style.visibility !== 'hidden') {
+            introContainer.style.animation = 'netflixFadeOut 0.3s ease-in-out forwards';
+        }
+    });
+    // END OF NEW CODE
+    
+    // ADD THIS NEW CODE AT THE TOP
+    // Portfolio particles functionality
+    function createPortfolioParticles() {
+        const particlesContainer = document.getElementById('portfolio-particles');
+        if (!particlesContainer) return;
+        
+        const particleCount = 25; // Number of particles
+        
+        for (let i = 0; i < particleCount; i++) {
+            const particle = document.createElement('div');
+            particle.className = 'portfolio-particle';
+            
+            // Random size (smaller than Netflix intro particles)
+            const size = Math.random() * 3 + 1; // 1-4px
+            particle.style.width = size + 'px';
+            particle.style.height = size + 'px';
+            
+            // Random position across the screen
+            particle.style.left = Math.random() * 100 + '%';
+            particle.style.top = Math.random() * 100 + '%';
+            
+            // Random animation delay for natural movement
+            particle.style.animationDelay = Math.random() * 8 + 's';
+            
+            particlesContainer.appendChild(particle);
+        }
+    }
+
+    // Function to start portfolio particles after Netflix intro
+    function startPortfolioParticles() {
+        const portfolioParticles = document.getElementById('portfolio-particles');
+        if (portfolioParticles) {
+            portfolioParticles.classList.add('active');
+        }
+    }
+
+    // Initialize portfolio particles
+    createPortfolioParticles();
+
+    // Start particles after Netflix intro finishes (5.5 seconds)
+    setTimeout(() => {
+        startPortfolioParticles();
+    }, 5500);
+
+    // Also start particles if user clicks to skip Netflix intro
+    document.addEventListener('click', function(e) {
+        const introContainer = document.getElementById('intro-container');
+        if (introContainer && introContainer.style.display !== 'none' && introContainer.style.visibility !== 'hidden') {
+            // Start particles immediately when skipping
+            setTimeout(startPortfolioParticles, 500);
+        }
+    });
+    // END OF NEW CODE
+
+    // YOUR EXISTING CODE CONTINUES BELOW (don't change anything)
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>    
+</body>
+</html>

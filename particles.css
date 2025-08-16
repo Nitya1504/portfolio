@@ -1,0 +1,85 @@
+/* Portfolio Background Particles - Separate File */
+.portfolio-particles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+.portfolio-particles.active {
+    opacity: 1;
+}
+
+.portfolio-particle {
+    position: absolute;
+    background: #DAA520; /* Deep yellow/gold to match your theme */
+    border-radius: 50%;
+    opacity: 0.6;
+    animation: portfolioParticleFloat 8s ease-in-out infinite;
+}
+
+.portfolio-particle:nth-child(even) {
+    animation: portfolioParticleFloat2 10s ease-in-out infinite;
+}
+
+.portfolio-particle:nth-child(3n) {
+    animation: portfolioParticleFloat3 12s ease-in-out infinite;
+}
+
+/* Different floating animations for variety */
+@keyframes portfolioParticleFloat {
+    0%, 100% {
+        transform: translateY(0px) translateX(0px) rotate(0deg);
+        opacity: 0.4;
+    }
+    33% {
+        transform: translateY(-30px) translateX(20px) rotate(120deg);
+        opacity: 0.8;
+    }
+    66% {
+        transform: translateY(-60px) translateX(-15px) rotate(240deg);
+        opacity: 0.6;
+    }
+}
+
+@keyframes portfolioParticleFloat2 {
+    0%, 100% {
+        transform: translateY(0px) translateX(0px) rotate(0deg);
+        opacity: 0.3;
+    }
+    50% {
+        transform: translateY(-80px) translateX(-30px) rotate(180deg);
+        opacity: 0.7;
+    }
+}
+
+@keyframes portfolioParticleFloat3 {
+    0%, 100% {
+        transform: translateY(0px) translateX(0px) rotate(0deg);
+        opacity: 0.5;
+    }
+    25% {
+        transform: translateY(-20px) translateX(25px) rotate(90deg);
+        opacity: 0.3;
+    }
+    50% {
+        transform: translateY(-50px) translateX(10px) rotate(180deg);
+        opacity: 0.8;
+    }
+    75% {
+        transform: translateY(-35px) translateX(-20px) rotate(270deg);
+        opacity: 0.4;
+    }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .portfolio-particle {
+        opacity: 0.4; /* Less visible on mobile */
+    }
+}

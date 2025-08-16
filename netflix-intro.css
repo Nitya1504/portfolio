@@ -1,0 +1,149 @@
+/* Netflix Intro Styles - Separate File */
+.intro-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(ellipse at center, #1a1a1a 0%, #000 70%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    opacity: 1;
+    animation: netflixFadeOut 0.8s ease-in-out 4.5s forwards;
+}
+
+.logo-container {
+    position: relative;
+    transform: scale(0.8);
+    animation: netflixLogoEntrance 2s ease-out 0.5s forwards;
+}
+
+.logo-text {
+    font-size: 5rem;
+    font-weight: bold;
+    color:  #DAA520;
+    text-shadow: 0 0 30px rgba(229, 159, 9, 0.8);
+    letter-spacing: 0.2em;
+    opacity: 0;
+    animation: netflixTextGlow 1.5s ease-in-out 1s forwards;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.portfolio-text {
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+    margin-top: 1rem;
+    letter-spacing: 0.3em;
+    opacity: 0;
+    animation: netflixSubtitleFade 1s ease-in-out 2.5s forwards;
+    font-family: 'Poppins', sans-serif;
+}
+
+.shine-effect {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+    animation: netflixShine 0.8s ease-in-out 3.2s;
+}
+
+.particles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.particle {
+    position: absolute;
+    background:  #DAA520;
+    border-radius: 50%;
+    opacity: 0;
+    animation: netflixParticleFloat 3s ease-in-out infinite;
+}
+
+/* Animations */
+@keyframes netflixLogoEntrance {
+    0% {
+        transform: scale(0) rotate(-180deg);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1) rotate(0deg);
+        opacity: 1;
+    }
+}
+
+@keyframes netflixTextGlow {
+    0% {
+        opacity: 0;
+        transform: scale(1.2);
+        text-shadow: 0 0 0px rgba(229, 9, 20, 0);
+    }
+    50% {
+        text-shadow: 0 0 50px rgb(232, 221, 12);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+        text-shadow: 0 0 30px rgba(229, 200, 9, 0.773);
+    }
+}
+
+@keyframes netflixSubtitleFade {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes netflixShine {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+@keyframes netflixFadeOut {
+    0% {
+        opacity: 1;
+        visibility: visible;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+        display: none;
+    }
+}
+
+@keyframes netflixParticleFloat {
+    0%, 100% {
+        opacity: 0;
+        transform: translateY(0) scale(0);
+    }
+    50% {
+        opacity: 0.6;
+        transform: translateY(-50px) scale(1);
+    }
+}
+
+/* Responsive design for intro */
+@media (max-width: 768px) {
+    .logo-text {
+        font-size: 3rem;
+    }
+    .portfolio-text {
+        font-size: 1.2rem;
+    }
+}
